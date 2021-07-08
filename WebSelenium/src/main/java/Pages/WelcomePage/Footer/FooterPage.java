@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
-
 import static Utilities.Utilities.isElementPresent;
 
 public class FooterPage extends BasePage {
@@ -18,6 +17,7 @@ public class FooterPage extends BasePage {
         List<WebElement> elements = driver.findElements(footer_title);
         for(WebElement element : elements)
         {
+
             if (element.getText().equalsIgnoreCase(footerTitleText))
             {
                 return true;
